@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    background-color: #D7C0AE;
+}
+.image-container, .form-container{
+    width: 50%;
+}
+.image-container{
+    background-image: url("../assets/MicrosoftTeams-image.png");
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: #472D2D;
+}
+.form-container{
+    margin: 1rem;
+    background-color: #F9F9F9;
+}
+.form-header-div{
+    margin: .5rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: #B7C4CF;
+    color: #472D2D;
+}
+.form-header-div input{
+    height: 1.8rem;
+    margin-bottom: .8rem;
+    border: none;
+    padding-left: .5rem;
+    border-radius: 5px;
+}
+.form-header-div button{
+    background-color: #252525;
+    color: #F9F9F9;
+    border: none;
+    padding: .5rem;
+    border-radius: 20px;
+
+}
+.task-div{
+    margin: .5rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #d3dbe1;
+    color: #472D2D;
+    height: 79%
+}
+.todo-items{
+    margin-top: 1rem;
+}
+.todo{
+    list-style: none;
+    padding: .5rem .5rem .5rem 1rem;
+    background-color: #F9F9F9;
+    border-radius: 5px;
+    margin: 5px 0;
+    display: flex;
+    width: 100%;
+    transition: all 0.5s ease-in;
+}
+.todo button:nth-child(2){
+    margin: 0 .5rem 0 auto;
+}
+.todo button:nth-child(2){
+    background-color: #06ec7d;
+    padding: 3px;
+    border-radius: 2px;
+    color: #F9F9F9;
+    border: none;
+}
+.todo button:nth-child(3){
+    background-color: #CC3636;
+    padding: 3px;
+    border-radius: 2px;
+    color: #F9F9F9;
+    border: none;
+    position: none;
+}
+.completed{
+    text-decoration: line-through;
+    opacity: 0.7;
+}
